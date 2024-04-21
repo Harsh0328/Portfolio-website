@@ -1,0 +1,31 @@
+.cursor-dot {
+    position: fixed;
+    width: 40px; /* Adjust the default diameter */
+    height: 40px; /* Adjust the default diameter */
+    background-color: transparent;
+    border: 1px solid #fff; /* Adjust the default border properties */
+    border-radius: 50%;
+    mix-blend-mode: exclusion;
+    pointer-events: none;
+    transition: background-color 0.15s, border 0.15s, transform 0.15s, width 0.15s, height 0.15s; /* Adjust transition timings */
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale(1); /* Adjust default scale */
+    z-index: 9999;
+}
+
+.hovered {
+    /* This class is added when hovering over elements */
+    background-color: white;
+    border: 1px solid transparent; /* Adjust border on hover */
+    transform: translate3d(-50%, -50%, 0) scale(1.5); /* Adjust scale on hover */
+}
+
+.custom-system-cursor {
+    position: fixed;
+    width: 10px; /* Customize the dot cursor size */
+    height: 10px; /* Customize the dot cursor size */
+    background-color: black; /* Customize the dot cursor color */
+    border-radius: 50%; /* Make it a circle */
+    pointer-events: none;
+    z-index: 9999; /* Set a high z-index to ensure it's on top */
+}
